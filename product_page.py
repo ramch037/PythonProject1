@@ -23,6 +23,7 @@ class ProductPage:
 
     def click_cart_button(self):
         self.driver.find_element(*self.cart_button).click()
+        print('---')
 
     def click_proceed_to_checkout(self):
         wait = WebDriverWait(self.driver, 10)
