@@ -12,4 +12,5 @@ def test_browser_setup_teardown():
     driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")
     driver.implicitly_wait(5)
     yield driver
+    time.sleep(5)
     driver.quit()
